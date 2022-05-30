@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>krivolineynaya</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="program">
+        <div class="program__link">
+          <a class="program__link-prev" href="unix303.html">UNIX 303</a>
+          <a class="program__link-next" href="unix500.html">UNIX 500</a>
+        </div>
+
+        <div class="program__item">
+          <div class="program-container">
+            <h2 class="program__name">UNIX 500</h2>
+            <div class="program__input-object">
+              <h3 class="program__header">Введите начальные условия:</h3>
+              <div class="program__input-item">
+                <span class="program__input-point">n0</span>
+                <div class="program__input-container">
+                  <span class="program__span">x</span>
+                  <input class="program__input" id="x-input" type="text" />
+                </div>
+                <div class="program__input-container">
+                  <span class="program__span">y</span>
+                  <input class="program__input" id="y-input" type="text" />
+                </div>
+                <div class="program__input-container">
+                  <span class="program__span">z</span>
+                  <input class="program__input" id="z-input" type="text" />
+                </div>
+                <button class="program__btn" id="ok-block" type="submit">ок</button>
+              </div>
+            </div>
+            <h3 class="program__header">Координаты:</h3>
+            <div class="program__span__item">
+              <span class="program__input-point">n1</span>
+              <div class="program__input-container">
+                <span class="program__span">x</span>
+                <span class="program__input program__input-n" id="n1-x-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">y</span>
+                <span class="program__input program__input-n" id="n1-y-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">z</span>
+                <span class="program__input program__input-n" id="n1-z-input"></span>
+              </div>
+            </div>
+            <div class="program__span__item">
+              <span class="program__input-point">n2</span>
+              <div class="program__input-container">
+                <span class="program__span">x</span>
+                <span class="program__input program__input-n" id="n2-x-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">y</span>
+                <span class="program__input program__input-n" id="n2-y-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">z</span>
+                <span class="program__input program__input-n" id="n2-z-input"></span>
+              </div>
+            </div>
+            <div class="program__span__item">
+              <span class="program__input-point">n3</span>
+              <div class="program__input-container">
+                <span class="program__span">x</span>
+                <span class="program__input program__input-n" id="n3-x-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">y</span>
+                <span class="program__input program__input-n" id="n3-y-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">z</span>
+                <span class="program__input program__input-n" id="n3-z-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">R</span>
+                <span class="program__input program__input-n">16</span>
+              </div>
+            </div>
+            <div class="program__span__item">
+              <span class="program__input-point">n4</span>
+              <div class="program__input-container">
+                <span class="program__span">x</span>
+                <span class="program__input program__input-n" id="n4-x-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">y</span>
+                <span class="program__input program__input-n" id="n4-y-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">z</span>
+                <span class="program__input program__input-n" id="n4-z-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">R</span>
+                <span class="program__input program__input-n">166</span>
+              </div>
+            </div>
+            <div class="program__span__item">
+              <span class="program__input-point">n5</span>
+              <div class="program__input-container">
+                <span class="program__span">x</span>
+                <span class="program__input program__input-n" id="n5-x-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">y</span>
+                <span class="program__input program__input-n" id="n5-y-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">z</span>
+                <span class="program__input program__input-n" id="n5-z-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">R</span>
+                <span class="program__input program__input-n">22</span>
+              </div>
+            </div>
+            <div class="program__span__item">
+              <span class="program__input-point">n6</span>
+              <div class="program__input-container">
+                <span class="program__span">x</span>
+                <span class="program__input program__input-n" id="n6-x-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">y</span>
+                <span class="program__input program__input-n" id="n6-y-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">z</span>
+                <span class="program__input program__input-n" id="n6-z-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">R</span>
+                <span class="program__input program__input-n">77</span>
+              </div>
+            </div>
+            <div class="program__span__item">
+              <span class="program__input-point">n7</span>
+              <div class="program__input-container">
+                <span class="program__span">x</span>
+                <span class="program__input program__input-n" id="n7-x-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">y</span>
+                <span class="program__input program__input-n" id="n7-y-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">z</span>
+                <span class="program__input program__input-n" id="n7-z-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">R</span>
+                <span class="program__input program__input-n">77</span>
+              </div>
+            </div>
+            <div class="program__span__item">
+              <span class="program__input-point">n8</span>
+              <div class="program__input-container">
+                <span class="program__span">x</span>
+                <span class="program__input program__input-n" id="n8-x-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">y</span>
+                <span class="program__input program__input-n" id="n8-y-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">z</span>
+                <span class="program__input program__input-n" id="n8-z-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">R</span>
+                <span class="program__input program__input-n">22</span>
+              </div>
+            </div>
+            <div class="program__span__item">
+              <span class="program__input-point">n9</span>
+              <div class="program__input-container">
+                <span class="program__span">x</span>
+                <span class="program__input program__input-n" id="n9-x-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">y</span>
+                <span class="program__input program__input-n" id="n9-y-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">z</span>
+                <span class="program__input program__input-n" id="n9-z-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">R</span>
+                <span class="program__input program__input-n">166</span>
+              </div>
+            </div>
+            <div class="program__span__item">
+              <span class="program__input-point program__input-point-p">n10</span>
+              <div class="program__input-container">
+                <span class="program__span">x</span>
+                <span class="program__input program__input-n" id="n10-x-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">y</span>
+                <span class="program__input program__input-n" id="n10-y-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">z</span>
+                <span class="program__input program__input-n" id="n10-z-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">R</span>
+                <span class="program__input program__input-n">16</span>
+              </div>
+            </div>
+            <div class="program__span__item">
+              <span class="program__input-point program__input-point-p">n11</span>
+              <div class="program__input-container">
+                <span class="program__span">x</span>
+                <span class="program__input program__input-n" id="n11-x-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">y</span>
+                <span class="program__input program__input-n" id="n11-y-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">z</span>
+                <span class="program__input program__input-n" id="n11-z-input"></span>
+              </div>
+            </div>
+            <div class="program__span__item">
+              <span class="program__input-point program__input-point-p">n12</span>
+              <div class="program__input-container">
+                <span class="program__span">x</span>
+                <span class="program__input program__input-n" id="n12-x-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">y</span>
+                <span class="program__input program__input-n" id="n12-y-input"></span>
+              </div>
+              <div class="program__input-container">
+                <span class="program__span">z</span>
+                <span class="program__input program__input-n" id="n12-z-input"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="program__picture program__picture-unix500">
+            <span class="program__picture-text-desc program__picture-text-unix500">n0 / n12 - Настраиваемые точки</span>
+            <div class="program__picture-container-unix500">
+              <img src="/img/unix500.png" alt="" />
+              <div class="program__picture-circle program__picture-circle-unix500-1"></div>
+              <div class="program__picture-circle program__picture-circle-unix500-2"></div>
+              <div class="program__picture-circle program__picture-circle-unix500-3"></div>
+              <div class="program__picture-circle program__picture-circle-unix500-4"></div>
+              <div class="program__picture-circle program__picture-circle-unix500-5"></div>
+              <div class="program__picture-circle program__picture-circle-unix500-6"></div>
+              <div class="program__picture-circle program__picture-circle-unix500-7"></div>
+              <div class="program__picture-circle program__picture-circle-unix500-8"></div>
+              <div class="program__picture-circle program__picture-circle-unix500-9"></div>
+              <div class="program__picture-circle program__picture-circle-unix500-10"></div>
+              <div class="program__picture-circle program__picture-circle-unix500-11"></div>
+              <div class="program__picture-circle program__picture-circle-unix500-12"></div>
+              <span class="program__picture-text program__picture-text-unix500-n1">n1</span>
+              <span class="program__picture-text program__picture-text-unix500-n2">n2</span>
+              <span class="program__picture-text program__picture-text-unix500-n3">n3</span>
+              <span class="program__picture-text program__picture-text-unix500-n4">n4</span>
+              <span class="program__picture-text program__picture-text-unix500-n5">n5</span>
+              <span class="program__picture-text program__picture-text-unix500-n6">n6</span>
+              <span class="program__picture-text program__picture-text-unix500-n7">n7</span>
+              <span class="program__picture-text program__picture-text-unix500-n8">n8</span>
+              <span class="program__picture-text program__picture-text-unix500-n9">n9</span>
+              <span class="program__picture-text program__picture-text-unix500-n10">n10</span>
+              <span class="program__picture-text program__picture-text-unix500-n11">n11</span>
+              <span class="program__picture-text program__picture-text-unix500-n12">n12</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="unix500.js"></script>
+  </body>
+</html>

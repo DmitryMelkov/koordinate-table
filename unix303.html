@@ -21,24 +21,36 @@
             <div class="program__input-object">
               <h3 class="program__header">Введите начальные условия:</h3>
               <div class="program__input-item">
-
                 <div class="program__input-group">
-                  <span class="program__input-point">n0</span>
-                  <div class="program__input-container">
-                    <span class="program__span">x</span>
-                    <input class="program__input" id="x-input" type="text" />
+                  <div class="program__input-group-first">
+                    <span class="program__input-point">n0</span>
+                    <div class="program__input-container">
+                      <span class="program__span">x</span>
+                      <input class="program__input" id="x-input" type="text" />
+                    </div>
+                    <div class="program__input-container">
+                      <span class="program__span">y</span>
+                      <input class="program__input" id="y-input" type="text" />
+                    </div>
+                    <div class="program__input-container">
+                      <span class="program__span">z</span>
+                      <input class="program__input" id="z-input" type="text" />
+                    </div>
                   </div>
-                  <div class="program__input-container">
-                    <span class="program__span">y</span>
-                    <input class="program__input" id="y-input" type="text" />
-                  </div>
-                  <div class="program__input-container">
-                    <span class="program__span">z</span>
-                    <input class="program__input" id="z-input" type="text" />
+                  <div class="program__input-group-second">
+                    <div class="program__input-container">
+                      <span class="program__span">a(Длина)</span>
+                      <input class="program__input" id="a-input" type="number" value="84.5" />
+                    </div>
+                    <div class="program__input-container">
+                      <span class="program__span">b(Ширина)</span>
+                      <input class="program__input" id="b-input" type="number" value="46.4" />
+                    </div>
                   </div>
                 </div>
-
-                <button class="program__btn" id="ok-block" type="submit">ok</button>
+                <div class="program__btn-container">
+                  <button class="program__btn" id="ok-block" type="submit">ok</button>
+                </div>
               </div>
             </div>
             <h3 class="program__header">Координаты:</h3>
@@ -142,7 +154,6 @@
               </div>
             </div>
           </div>
-
 
           <div class="program__picture">
             <span class="program__picture-text-desc">n0 / n6 - Настраиваемые точки</span>

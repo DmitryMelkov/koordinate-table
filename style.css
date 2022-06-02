@@ -272,20 +272,25 @@ label {
 
 .program__picture-text-unix303-n2 {
   top: -23px;
-  right: -11px;
+  left: 6px;
 }
 
 .program__picture-text-unix303-n3 {
-  bottom: -23px;
+  top: -23px;
   right: -11px;
 }
 
 .program__picture-text-unix303-n4 {
   bottom: -23px;
-  left: -11px;
+  right: -11px;
 }
 
 .program__picture-text-unix303-n5 {
+  bottom: -8px;
+  left: -22px;
+}
+
+.program__picture-text-unix303-n6 {
   top: -8px;
   left: -22px;
 }

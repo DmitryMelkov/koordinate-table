@@ -19,7 +19,7 @@ window.addEventListener("DOMContentLoaded", function () {
   let b9 = 15;
   let b10 = 13.5;
 
-  let n1 = { x1: 45.04, y1: 53.91, z1: 176.55 };
+  let n1 = { x1: 1.99, y1: 96.90, z1: 104.85 };
   console.log(n1);
 
   let n2 = {};

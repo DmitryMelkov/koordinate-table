@@ -58,7 +58,7 @@ window.addEventListener("DOMContentLoaded", function () {
     let b = document.querySelector("#b-input").value;
 
     let c = 1.3;
-    let z = 58.38;
+    let z = 17.32;
     let a1 = a - c * 2;
     let b1 = b - c * 2;
     console.log(a1 + " Длина а1");
@@ -79,9 +79,9 @@ window.addEventListener("DOMContentLoaded", function () {
     //n2
     let n2 = {};
 
-    n2.x2 = Number(n1.x1);
+    n2.x2 = Math.floor((Number(n1.x1) - Number(a1)) * 100) / 100;
     n2.y2 = Number(n1.y1);
-    n2.z2 = Number(n1.z1) + Number(z);
+    n2.z2 = Number(n1.z1);
 
     x2Value = n2.x2;
     y2Value = n2.y2;
@@ -94,8 +94,8 @@ window.addEventListener("DOMContentLoaded", function () {
     //n3
     let n3 = {};
 
-    n3.x3 = Math.floor((Number(n2.x2) - Number(a1)) * 100) / 100;
-    n3.y3 = Number(n2.y2);
+    n3.x3 = Number(n2.x2);
+    n3.y3 = Math.floor((Number(n2.y2) + Number(b1)) * 100) / 100;
     n3.z3 = Number(n2.z2);
 
     x3Value = n3.x3;
@@ -109,8 +109,8 @@ window.addEventListener("DOMContentLoaded", function () {
     //n4
     let n4 = {};
 
-    n4.x4 = Number(n3.x3);
-    n4.y4 = Math.floor((Number(n3.y3) + Number(b1)) * 100) / 100;
+    n4.x4 = Number(n1.x1);
+    n4.y4 = Number(n3.y3);
     n4.z4 = Number(n3.z3);
 
     x4Value = n4.x4;
@@ -124,8 +124,8 @@ window.addEventListener("DOMContentLoaded", function () {
     //n5
     let n5 = {};
 
-    n5.x5 = Number(n2.x2);
-    n5.y5 = Number(n4.y4);
+    n5.x5 = Number(n1.x1);
+    n5.y5 = Number(n1.y1);
     n5.z5 = Number(n4.z4);
 
     x5Value = n5.x5;
@@ -137,28 +137,13 @@ window.addEventListener("DOMContentLoaded", function () {
     document.querySelector("#n5-z-input").innerHTML = z5Value;
 
     //n6
+
     let n6 = {};
 
-    n6.x6 = Number(n2.x2);
-    n6.y6 = Number(n2.y2);
-    n6.z6 = Number(n4.z4);
+    n6.z6 = Number(n1.z1) - z;
 
-    x6Value = n6.x6;
-    y6Value = n6.y6;
     z6Value = n6.z6;
 
-    document.querySelector("#n6-x-input").innerHTML = x6Value;
-    document.querySelector("#n6-y-input").innerHTML = y6Value;
     document.querySelector("#n6-z-input").innerHTML = z6Value;
-
-    //n7
-
-    let n7 = {};
-
-    n7.z7 = Number(n1.z1);
-
-    z7Value = n7.z7;
-
-    document.querySelector("#n7-z-input").innerHTML = z7Value;
   });
 });
